@@ -1,0 +1,66 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+$base-font-family: 'Domine', Georgia, Arial, sans-serif;
+$base-font-size: 18px;
+
+
+$base-text-color: #555555;
+$base-link-color: #A60D70;
+$hover-link-color: #000000;
+
+$base-line-height: 36px;
+
+
+@mixin text-links {
+	color: $base-link-color;
+	text-decoration: none;
+}
+@mixin text-links-hover {
+	color: $hover-link-color;
+}
+
+section {
+	width: 1200px;
+}
+
+header {
+	float: left;	
+}
+
+body {
+	margin: auto;
+	width: 1200px;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	color: $base-text-color;
+	line-height: $base-line-height;
+	padding: 20px;
+	text-align: center;
+
+}
+
+p {
+	padding: 20px 0;
+}
+
+a {
+	@include text-links;
+}
+
+a:hover {
+	@include text-links-hover;
+}
+
+nav {
+	text-align: right;
+}
+
+#maintext {
+	padding: 20px;
+}
